@@ -1,0 +1,12 @@
+{
+    "timeout": 20,
+    "verbose": true,
+    "host": "hexlet.io",
+    "gig":{
+      "big":"false",
+      "small":"true",
+      "obj":{
+        "yes":"no"
+      }
+    }
+  }
