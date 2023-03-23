@@ -11,7 +11,7 @@ const stringify = (iter, value, depth, repeat) => {
   }
 
   if (value === '') {
-    return `${value}`;
+    return ` ${value}`;
   }
   return ` ${value}`;
 };
@@ -26,7 +26,7 @@ export default (obj, indent = '  ', space = 2) => {
         case 'added':
           return `\n${repeat}+ ${key.name}:${stringify(iter, key.value, depth, repeat)}`;
         case 'unchanged':
-          return `\n${repeat} ${key.name}:${stringify(iter, key.value, depth, repeat)}`;
+          return `\n${repeat}  ${key.name}:${stringify(iter, key.value, depth, repeat)}`;
         case 'deleted':
           return `\n${repeat}- ${key.name}:${stringify(iter, key.value, depth, repeat)}`;
         case 'changed':
