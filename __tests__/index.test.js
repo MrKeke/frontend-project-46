@@ -26,8 +26,8 @@ test('test JSON big plain', () => {
     .toBe(getData('expectedPlain.txt'));
 });
 
-test('test YAML big', () => {
-  expect(genDiff(getFixturePath('first.yaml'), getFixturePath('second.yaml')))
+test('test yml big', () => {
+  expect(genDiff(getFixturePath('first.yml'), getFixturePath('second.yml')))
     .toBe(getData('expectedStylish.txt'));
 });
 
@@ -36,12 +36,12 @@ test('test JSON big stylish', () => {
     .toBe(getData('expectedStylish.txt'));
 });
 
-test('test YAML big plain', () => {
-  expect(genDiff(getFixturePath('first.yaml'), getFixturePath('second.yaml'), 'plain'))
+test('test yml big plain', () => {
+  expect(genDiff(getFixturePath('first.yml'), getFixturePath('second.yml'), 'plain'))
     .toBe(getData('expectedPlain.txt'));
 });
 
-test('test YAML big json', () => {
-  expect(genDiff(getFixturePath('first.yaml'), getFixturePath('second.yaml'), 'json'))
+test('test yml big json', () => {
+  expect(genDiff(getFixturePath('first.yml'), getFixturePath('second.yml'), 'json'))
     .toBe(getData('expectedJSON.txt'));
 });

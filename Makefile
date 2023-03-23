@@ -11,10 +11,10 @@ do-big:
 		gendiff __fixtures__/firstBig.json  __fixtures__/secondBig.json
 
 doY:
-		gendiff __fixtures__/first.yaml  __fixtures__/second.yaml
+		gendiff __fixtures__/first.yml  __fixtures__/second.yml
 
 do-bigY:
-		gendiff __fixtures__/firstBig.yaml  __fixtures__/secondBig.yaml
+		gendiff __fixtures__/firstBig.yml  __fixtures__/secondBig.yml
 
 lint:
 		npx eslint .
