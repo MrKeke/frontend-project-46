@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
 const treeBulder = (data1, data2) => {
-  const fuck = _.union(_.keys(data1), _.keys(data2));
-  const keys = ({ ...fuck }).sort();
+  const key = _.union(_.keys(data1), _.keys(data2));
+  const keys = _.cloneDeep(key).sort()
   return keys.map((key) => {
     const firstValue = data1[key];
     const secondValue = data2[key];
