@@ -26,7 +26,7 @@ export default (obj) => {
         case 'unchanged':
           return null;
         default:
-          return key; 
+          return key;
       }
     });
     return result.filter((string) => string !== null).join('\n');
