@@ -20,7 +20,7 @@ Node 14.x version at least
 1. Clone repository:
 
 ```
-git clone git@github.com:Syusina/frontend-project-46.git
+git clone github.com/MrKeke/frontend-project-46.git
 ```
 
 2. Install dependencies:
